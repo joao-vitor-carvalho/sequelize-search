@@ -1,8 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
+const sequelize = require('dbpsb.js');
 
-
-//const sequelize = new Sequelize('sqlite::memory:');
-const sequelize = new Sequelize('mssql::autorreformaps:40Psb29f7z1@mysql.autorreformapsb.com.br/autorreformaps');
 
 const Wp_post = sequelize.define('Wp_post', {
     ID: {
@@ -32,4 +30,5 @@ const Wp_post = sequelize.define('Wp_post', {
 });
 
 console.log(Wp_post === sequelize.models.Wp_post);
+
 

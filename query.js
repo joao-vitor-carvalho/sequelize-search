@@ -1,4 +1,4 @@
-const sequelize = require('dbpsb.js'); 
+const sequelize = require('db.js');
 
 
 const query = await Wp_post.findAll();
